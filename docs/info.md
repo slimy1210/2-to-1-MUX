@@ -1,20 +1,28 @@
-<!---
-
-This file is used to generate your project datasheet. Please fill in the information below and delete any unused
-sections.
-
-You can also include images in this folder and reference them in the markdown. Each image must be less than
-512 kb in size, and the combined size of all images must be less than 1 MB.
--->
-
 ## How it works
 
-Explain how your project works
+This project implements a 2-to-1 multiplexer using two AND
+gates, one NOT gate, and one OR gate. The select input S
+determines which input is passed to the output Y.
+
+When S = 0, Y = A.
+When S = 1, Y = B.
+
+The Boolean expression is Y = A'S + BS when the first
+term uses the complement of S, expressed as A AND NOT S.
 
 ## How to test
 
-Explain how to use your project
+Start the Wokwi simulation and toggle the first three
+DIP switches.
+
+Switch 1 controls input A.
+Switch 2 controls input B.
+Switch 3 controls select input S.
+
+The output LED indicates the value of Y. Test all eight
+input combinations to verify the multiplexer operation.
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+No external hardware is required for the logic circuit.
+DIP switches and an LED are used for simulation and testing.
